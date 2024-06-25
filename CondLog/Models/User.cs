@@ -1,4 +1,5 @@
 ﻿using CondLog.Data;
+using Microsoft.Extensions.WebEncoders.Testing;
 
 namespace CondLog.Models
 {
@@ -11,6 +12,7 @@ namespace CondLog.Models
         public string Block { get; set; } = null!;
         //public string Email { get; private set; } = null!;
         //public string Password { get; private set; } = null!;
+        //public string teste { get; set; }
         public ICollection<Ocurrence> UserOcurrences { get; private set; } = new List<Ocurrence>();
         public bool IsDeleted { get; private set; }
         public void Delete()
